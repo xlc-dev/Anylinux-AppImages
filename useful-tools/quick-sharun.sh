@@ -1150,6 +1150,7 @@ _make_deployment_array() {
 			"$LIB_DIR"/alsa-lib/*pipewire*.so*
 	fi
 	if [ "$DEPLOY_PULSE" = 1 ]; then
+		_echo "* Deploying pulseaudio"
 		set -- "$@" \
 			"$LIB_DIR"/libpulse.so* \
 			"$LIB_DIR"/alsa-lib/libasound*pulse*.so*
